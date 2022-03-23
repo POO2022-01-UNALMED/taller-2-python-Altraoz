@@ -36,3 +36,16 @@ class Auto:
            return m_2 
        return m_2
 
+class Motor:
+     pass
+     def __init__ (self, numeroCilindros, tipo, registro):
+         self.tipo = tipo
+         self.numeroCilindros = numeroCilindros
+         self.registro = registro
+
+     def cambiarRegistro(self, registro):
+         self.registro = registro
+
+     def asignarTipo(self, tipo):
+         if tipo == "gasolinas" or tipo == "electricos":
+             self.tipo = tipo
